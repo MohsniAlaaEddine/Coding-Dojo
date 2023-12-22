@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #333333;
+    color: white;
+    padding: 10px;
+    height: 60px;
+    align-items: center;
+}
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 5px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+}
+.btn{
+    background-color:#17A2B8 ;
+    box-shadow: 3px 3px black;
+    color: white;
+    border: 2px solid black;
+    width: 80px;
+    height: 35px;
+}
+.active{
+    font-weight: bold;
+}

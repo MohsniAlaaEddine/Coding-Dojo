@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- create the nav bar with right elements(leaf img and the Name) and left elements(search,sign and cat img) -->
+
+    <!-- create the left elements -->
+    <div class="navBar">
+        <div class="leftNavBar">
+            <img src="assets/leaf.png" alt="leafPic">
+            <h1 class="easyBay">EasyBay</h1>
+        </div>
+        <!-- create the right elements -->
+        <div class="rightNavBar">
+            <div class="search">
+                <input type="text" placeholder="Search for anything">
+                <img class="loopp" src="assets/search-dark.png" alt="searchIcon">
+            </div>
+            <div class="signAndCart">
+                <p>Sign In</p>
+                <img src="assets/cart-dark.png" alt="cartPic" onclick="alert('Your Cart is empty')">
+            </div>
+        </div>
+    </div>
+
+    <!-- create the list bar  -->
+    <ul class="listBar">
+        <li>Aeonium</li>
+        <li>Andormischus</li>
+        <li>Agave</li>
+        <li>Aloe</li>
+        <li>Anacampseros</li>
+        <li>Aristaloe</li>
+        <li>More...</li>
+    </ul>
+
+    <!-- create lign of text -->
+    <h2>Your Source for Serious Succulent Specialties</h2>
+
+    <!-- create a box contain left column and right column -->
+
+
+    <div class="container">
+        <div class="leftColumn">
+            <div class="text">
+                <h4>Discover succ-<br>ulent varities<br>one potor rack<br>at a time!</h4>
+                <div class="arrowText">
+                    <h4>Discover</h4>
+                    <img src="assets/arrow-light.png"  alt="arrowPic">
+                </div>
+            </div>
+            <img src="assets/succulents-1.jpg" id="imgEdit" onmouseover="addImage(this)" onmouseout="removeImg(this)" alt="succulents-1">
+        </div>
+        <div class="rightColumn">
+            <img src="assets/aloe-m.jpg" alt="aloe-m">
+            <div class="sooText">
+                <h3>Soothing Aloe</h3>
+                <img src="assets/arrow-light.png" alt="arrow-light">
+            </div>
+        </div>
+    </div>
+
+    <!-- create the bottom -->
+    <div class="bottom">
+
+        <ul class="listImg">
+            <li><img src="assets/aeonium-s.jpg" alt=""></li>
+            <li><img src="assets/aloe-s.jpg" alt=""></li>
+            <li><img src="assets/cactus-s.jpg" alt=""></li>
+            <li><img src="assets/echeveria-s.jpg" alt=""></li>
+            <li><img src="assets/sedum-s.jpg" alt=""></li>
+            <li><img src="assets/sempervivum-s.jpg" alt=""></li>
+        </ul>
+        <ul class="listName">
+            <li>Aeornim</li>
+            <li>Agave</li>
+            <li>Cactus</li>
+            <li>Echeberia</li>
+            <li>Sedum</li>
+            <li>Sempervivum</li>
+        </ul>
+    </div>
+    <div class="cookies">
+        <img src="assets/alert-dark.png" alt="">
+        <p>This site makes use of thid-party cookies,by clicking "I accept"<br>you agree to the terms outlined in our <a
+                href="#">cookie policy</a></p>
+        <button class="acc" onclick="suppr()">I Accept</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #CCCCCC;
+    color: white;
+    width:600px;
+    padding: 20px;
+    margin: auto;
+    align-items: center;
+
+    
+}
+
+.navBarRight{
+    display: flex;
+}
+
+.login{
+    margin-left: 150px;
+    margin-right: 20px;
+    border: 2px black solid;
+    box-shadow: 2px 3px 2px  black;
+    width: 75px;
+    padding: 5px;
+    background-color:#2B78E4 ;
+    color: white;
+    
+}
+
+.search{
+    border: 3px  black solid;
+    width: 150px;
+    margin-left: 100px;
+    height: 23px;
+}
+
+.nav-title{
+    color: black;
+}
+
+   /* style of left column top */
+
+   
+   .leftTopContainer{
+    border: 3px black solid;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    left: 450px;
+    
+
+}
+.ninja{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+    /* border: 3px red solid; */
+    width: 120px;
+    align-items: center;
+}
+.likes1{
+    width: 90px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color:#FFD966 ;
+    box-shadow: 3px 3px black;
+    border: 3px black solid;
+    margin-top: 15px;
+}
+.textNinja{
+    text-align: center;
+    margin: 10px;
+}
+.parTop{
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 15px;
+   
+}
+
+.leftBottomContainer{
+    border: 3px black solid;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 450px;
+    top: 270px;
+    
+
+}
+
+/* style right column */
+
+.rightColumnContainer{
+    border: 3px black solid;
+    width: 180px;
+    padding: 10px;
+    position: absolute;
+    top: 100px;
+    left: 884px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.add{
+    background-color:#93C47D ;
+    
+    padding: 5px;
+    box-shadow: 3px 2px black ;
+    border: 3px black solid;
+    margin-top: 10px;
+}
+
+
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <title>Party Posts</title>
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-between m-5">
+            <h2>Add a party</h2>
+            <a class="btn btn-dark me-3" href="/dashboard">Home</a>
+        </div>
+        <form class="row" action="/partys/create" method="post">
+            {% for message in get_flashed_messages()%}
+                    <li class="h6 text-danger">{{message}}</li>
+            {%endfor%}
+            <div class="col-6">
+                <div class="form-group">
+                    <label class="h6" for="title">What:</label>
+                    <input type="text" class="form-control" name="title">
+                </div>
+                <div class="form-group">
+                    <label class="h6" for="location">Where:</label>
+                    <input type="text" class="form-control" name="location">
+                </div>
+                <div class="form-group">
+                    <label class="h6" for="date">Date:</label>
+                    <input type="date" class="form-control" name="date">
+                </div>
+                <div class="form-group m-3">
+                    <label for="all_ages" class="h6">All ages:</label>
+                    <label>True</label>
+                    <input type="radio"  name="all_ages" value="1" checked>
+                    <label>False</label>
+                    <input type="radio"  name="all_ages" value="0">
+                </div>
+            </div>
+            <div class="form-group col-5">
+                <label class="h6" for="description">Description:</label>
+                <textarea class="form-control" name="description" id="" cols="30" rows="8"></textarea>
+            </div>
+            <input class="col-2 btn btn-success m-3" type="submit" value="Add Party">
+            </form>
+        </div>
+</body>
+</html>

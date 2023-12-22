@@ -1,0 +1,42 @@
+.cnxContainer{
+    border: 3px #CCCCCC solid ;
+    width: 300px;
+    border-top: 0;
+    
+   
+}
+.cnxFirstBlock{
+    background-color: black;
+    color:white;
+    padding: 10px;
+    
+
+}
+
+.cnxSecondBlock img{
+    width: 30px;
+   
+    
+}
+img[alt="person pic"]{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cnxSecondBlock{
+    display: flex;
+    flex-direction: column;
+    justify-items: end;
+    
+}
+img[alt="accept pic"]{
+    margin-left: 70px;
+    margin-right: 5px;
+}
+img[alt="accept2 pic"]{
+    margin-left: 90px;
+    margin-right: 5px;
+} 
+
+
+
+

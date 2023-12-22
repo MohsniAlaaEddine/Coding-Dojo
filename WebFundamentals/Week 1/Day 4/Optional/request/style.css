@@ -1,0 +1,36 @@
+.reqsContainer{
+    border:3px #CFCFCF solid;
+    width: 240px;
+    border-top: 0;
+    
+}
+.reqsFirstBlock{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+
+}
+
+.reqsSecondBlock{
+   margin: 10px;
+   
+}
+
+.reqsSecondBlock img{
+    height: 30px;
+}
+
+img[alt="accept pic"]{
+  height: 30px;
+  margin-left: 35px;
+  margin-right:  5px; ;
+}
+img[ alt="todd pic"]{
+    margin-right: 15px;
+}
+
+img[ alt="phill pic"]{
+    margin-right: 15px;
+}
+

@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif ;
+}
+.container{
+    /* background-color: #17A2B8; */
+    width: 600px;
+    min-height:300px ;
+    position: relative;
+    left: 200px;
+    top:100px;
+}
+
+.firstBlock{
+    background-color: #17A2B8;
+    height: 75px;
+}
+.secondBlock img {
+    height:15px;
+    margin-right: 10px;
+}
+.secondBlock {
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    gap :20px;
+    border: 3px grey solid;
+    border-top: 0;
+    padding: 0 0 10px 30px;
+}
+img[alt="user-circle pic"]{
+    position:absolute;
+    top: 20px;
+    left: 20px;
+
+}
+.flow{
+     
+}

@@ -1,0 +1,87 @@
+.aboutMeContainer {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutMeContainer h1 {
+    margin: 0;
+    animation: 3s anim-lineUp ease-out ;
+}
+
+@keyframes anim-lineUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.aboutMeContainer p {
+    animation: 5s anim-lineUp ease-out ;
+    
+}
+
+@keyframes anim-lineUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+.aboutMeIcons{
+    display: flex;
+    gap: 15px; 
+}
+
+.aboutMeContainer svg {
+    animation: 9s anim-lineUp ease-out ;
+    
+}
+
+@keyframes anim-lineUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

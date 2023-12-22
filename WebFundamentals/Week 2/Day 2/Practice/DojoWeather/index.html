@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- create the nav bar -->
+        <div class="nav">
+            <h1>DojoWeather</h1>
+            <ul class="list" onclick="setTimeout(bull)">
+                <li>Burbank</li>
+                <li>Chicago</li>
+                <li>Dallas</li>
+            </ul>
+        </div>
+
+        <div class="secondNav">
+            <h2>San Jose</h2>
+            <div class="rightSecondNav">
+
+                <h4>show temperature in</h4>
+                <select name="temperature" id="temp">
+                    <option value="°C">°C</option>
+                    <option value="°F">°F</option>
+                </select>
+            </div>
+        </div>
+        <!-- create days -->
+        <div class="days">
+            <div class="today">
+                <h3>Today</h3>
+                <img src="assets/some_rain.png" alt="rainPic">
+                <h6>some rain</h6>
+                <h4 class="textTemp">
+                    <span class="temp1">24°</span>
+                    <span class="temp2">18°</span>
+                </h4>
+            </div>
+
+            <div class="today">
+                <h3>Tomorrow</h3>
+                <img src="assets/some_sun.png" alt="sunPic">
+                <h6>some rain</h6>
+                <h4 class="textTemp">
+                    <span class="temp1">24°</span>
+                    <span class="temp2">18°</span>
+                </h4>
+            </div>
+
+            <div class="today">
+                <h3>Friday</h3>
+                <img src="assets/some_clouds.png" alt="cloudPic">
+                <h6>some rain</h6>
+                <h4 class="textTemp">
+                    <span class="temp1">24°</span>
+                    <span class="temp2">18°</span>
+                </h4>
+            </div>
+
+            <div class="today">
+                <h3>Saturday</h3>
+                <img src="assets/some_sun.png" alt="sunPic">
+                <h6>some rain</h6>
+                <h4 class="textTemp">
+                    <span class="temp1">24°</span>
+                    <span class="temp2">18°</span>
+                </h4>
+            </div>
+        </div>
+        <div class="cookies">
+            <img src="assets/cookie.png" alt="cookiePic">
+            <div class="pCookie">
+                <h3>Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones) to personalize <br>content and ads,to provide social media
+                    features and to <br>analyse our traffic. <a href="#">Read More..</a></p>
+            </div>
+            <button class="btn" onclick=" suppr()">I Accept</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

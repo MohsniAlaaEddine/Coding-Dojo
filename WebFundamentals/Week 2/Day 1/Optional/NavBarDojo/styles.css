@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #CCCCCC;
+    color: white;
+    width:800px;
+    padding: 20px;
+    margin: auto;
+    align-items: center;
+
+    
+}
+
+.navBarRight{
+    display: flex;
+}
+
+.login{
+    margin-left: 150px;
+    margin-right: 20px;
+    border: 2px black solid;
+    box-shadow: 2px 3px 2px  black;
+    width: 75px;
+    padding: 5px;
+    background-color:#2B78E4 ;
+    color: white;
+}
+
+.search{
+    border: 3px  black solid;
+    width: 250px;
+    margin-left: 100px;
+    height: 23px;
+}
+
+.nav-title{
+    color: black;
+}
+

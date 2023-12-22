@@ -1,0 +1,24 @@
+.srch{
+    background-color: rgb(234, 241, 241);
+    color: rgb(76, 170, 170);
+    border:1px solid;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+ 
+ 
+ }
+ .plus {
+    background-color: rgb(171, 238, 238);
+    color: rgb(231, 242, 242);
+    border:1px solid;
+    border-radius: 50px;
+    margin-left: 20px;
+ }
+ .acc {
+    background-color: rgb(46, 19, 219);
+    color: aliceblue;
+    margin-top: 10px;
+    margin-left: 20px;
+    box-shadow: 2px 2px black, -1em 0 .4em black;
+ }

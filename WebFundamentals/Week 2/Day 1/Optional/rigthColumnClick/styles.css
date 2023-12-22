@@ -1,0 +1,12 @@
+.rightColumnContainer{
+    border: 2px black solid;
+    width: 180px;
+    padding: 10px;
+}
+.add{
+    background-color:#93C47D ;
+    margin-left: 37px;
+    padding: 5px;
+    box-shadow: 3px 2px black ;
+    border: 2px black solid;
+}

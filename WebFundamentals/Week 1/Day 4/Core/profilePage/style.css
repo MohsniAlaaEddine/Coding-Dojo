@@ -1,0 +1,223 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* style of navBar */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #333333;
+    color: white;
+    padding: 10px;
+    height: 60px;
+    align-items: center;
+    
+}
+.nav-title{
+    margin-left: 200px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 50px;
+    gap: 50px;
+
+}
+li>a{
+    text-decoration: none;
+    color: white;
+    margin-right: 30px; 
+}
+
+.btn{
+    background-color:#17A2B8 ;
+    box-shadow: 3px 3px black;
+    color: white;
+    border: 2px solid black;
+    width: 80px;
+    height: 35px;
+    margin-left: 50px;
+    margin-right: 780px;
+}
+.active{
+    font-weight: bold;
+}
+
+/* style of card */
+
+.container{
+    /* background-color: #17A2B8; */
+    width: 600px;
+    min-height:300px ;
+    position: relative;
+    left: 200px;
+    top:100px;
+}
+
+.firstBlock{
+    background-color: #17A2B8;
+    height: 75px;
+}
+.secondBlock img {
+    height:15px;
+    margin-right: 10px;
+}
+.secondBlock {
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    gap :20px;
+    border: 3px grey solid;
+    border-top: 0;
+    padding: 0 0 10px 30px;
+}
+img[alt="user-circle pic"]{
+    position:absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* style of education container */
+
+.edcContainer{
+    width:600px;
+    position:absolute;
+    top:530px;
+    left: 200px;
+    
+}
+
+.edcContainer > h2{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+     
+}
+
+.edcSecondBlock{
+    border: 2px #D1D1D1 solid ;
+    padding: 10px;
+    
+}
+
+/* requests styles */
+
+.reqsContainer{
+    border:3px #CFCFCF solid;
+    width: 260px;
+    border-top: 0;
+    position: absolute;
+    top: 180px;
+    left: 820px;
+    
+}
+.reqsFirstBlock{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+
+}
+
+.num1{
+    border-radius: 100%;
+    background-color: #CCCCCC;
+    height: 25px;
+    width: 20px;
+    font-size: 20px;
+    padding-left: 10px;
+
+}
+
+.reqsSecondBlock{
+   margin: 10px;
+   
+}
+
+.reqsSecondBlock img{
+    height: 30px;
+}
+
+.reqsSecondBlock img[alt="accept pic"]{
+  height: 30px;
+  margin-left: 45px;
+  margin-right:  5px; ;
+}
+img[ alt="todd pic"]{
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+img[ alt="phill pic"]{
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+/* style of your connection */
+
+.cnxContainer{
+    border: 3px #CCCCCC solid ;
+    width: 260px;
+    border-top: 0;
+    position: absolute;
+    top: 350px;
+    left: 820px;
+   
+}
+.cnxFirstBlock{
+    background-color: black;
+    color:white;
+    padding: 10px;
+    display: flex;
+    font-size: 22px;
+    
+
+}
+.num2{
+    border-radius: 100%;
+    background-color: #CCCCCC;
+    height: 25px;
+    width: 50px;
+    font-size: 20px; 
+    padding-left: 10px;
+}
+
+.cnxSecondBlock img{
+    width: 30px;
+   
+    
+}
+img[alt="person pic"]{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 25px;
+    border-radius: 50%;
+}
+.cnxSecondBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    
+}
+img[alt="accept pic"]{
+    margin-left: 20px;
+    margin-right: 5px;
+}
+img[alt="accept2 pic"]{
+    margin-left: 40px;
+    margin-right: 5px;
+} 
+.cnxThirdBlock{
+    border-top: 3px #CCCCCC solid;
+    padding: 10px;
+    font-size: 15px;
+}

@@ -1,0 +1,52 @@
+.containerCard{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+}
+.containerCard img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: 6px black solid;
+}
+.containerCard button{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+}
+.btnCv{
+    display: flex;
+    gap: 10px;
+}
+
+ /* .para{
+    margin: 0px;
+} */
+
+.para{
+    animation: 5s anim-lineUp ease-out ;
+    
+}
+
+@keyframes anim-lineUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

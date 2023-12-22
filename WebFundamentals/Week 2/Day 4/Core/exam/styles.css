@@ -1,0 +1,176 @@
+*{
+    margin: 0 auto ;
+    padding: 0;
+    text-align: center;
+}
+/* style of navBar */
+.navBar{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+    width: 800px;
+    padding: 10px;
+}
+.leftNavBar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.leftNavBar img{
+    width: 40px;
+    background-color:#00D1B2 ;
+    border-radius: 5px;
+    
+}
+.rightNavBar{
+    display: flex;
+    gap: 40px;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.signAndCart{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.signAndCart img{
+    width: 30px;
+    
+}
+.search img{
+    width: 15px;
+}
+.loopp{
+    margin-left: -30px;
+}
+.search input{
+    padding: 5px;
+    border-radius: 20px;
+    width: 230px;   
+    border: 3px black solid;
+}
+
+/* style of list bar */
+.listBar{
+    display: flex;
+    list-style:none;
+    gap: 25px;
+    border-bottom: 3px black solid;
+    width: 800px;
+}
+/* style of text of left container */
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    /* width: 80%; */
+    justify-content: space-between;
+    width: 800px;
+   
+}
+.leftColumn{
+    display: flex;
+    
+
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    background-color: #00D1B2;
+    color: white;
+    padding: 10px;
+    padding-top: 100px;
+    
+    
+    
+}
+.arrowText{
+    display: flex;
+align-items: center;
+}
+
+.img[alt="arrow-light"]{
+    width: 20px;
+}
+
+
+.rightColumn{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* flex: 1; */
+   
+}
+.sooText{
+    background-color: #00D1B2;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    height: 30px;
+    width: 310px;
+   
+}
+
+
+/* style of bottom */
+.listImg{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.listImg img{
+    width: 80px;
+    border-radius: 50%;
+
+}
+.listName{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    padding: 10px;
+    /* margin-left: 10%; */
+    
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #AAE8D8;
+    padding: 10px;
+    width: 800px;
+   
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.cookies{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color:#FFFFFF ;
+    border: 3px black solid;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    
+}
+.acc{
+    padding: 5px;
+    background-color: #00D1B2;
+    color: white;
+    box-shadow: 3px 3px black;
+    
+}
+
+

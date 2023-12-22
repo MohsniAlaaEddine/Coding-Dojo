@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box11{
+            width: 150px;
+            height: 150px;
+            background-color: {{color1}};
+            
+        }
+        .box12{
+            width: 150px;
+            height: 150px;
+            background-color: {{color2}};
+        }
+        .container1{
+            display: flex;
+            
+        }
+         
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="global">
+        {% for j in range(0,y | int): %}
+            {%if j%2==0%}
+            <div class="container1">
+                {% for i in range(0,x | int): %}
+                    {% if i%2==0 %}
+                        <div class="box11"></div>
+                    {% else %}
+                        <div class="box12"></div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            {%else%}
+            <div class="container1">
+                {% for i in range(0,x | int): %}
+                    {% if i%2==0 %}
+                        <div class="box12"></div>
+                    {% else %}
+                        <div class="box11"></div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            {% endif %}
+
+
+        {% endfor %}
+        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+.edcContainer{
+    /* border:2px grey solid; */
+    width:600px;
+    position:absolute;
+    top:500px;
+    left: 100px;
+}
+
+.edcContainer > h2{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    
+    
+}
+.edcSecondBlock{
+    border: 2px #D1D1D1 solid ;
+    margin-top: -20px;
+}
