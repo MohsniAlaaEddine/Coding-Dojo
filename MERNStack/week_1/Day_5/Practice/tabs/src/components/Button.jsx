@@ -1,14 +1,14 @@
 import React from 'react'
 
-const Button = () => {
+const Button = (props) => {
+  const{buttons}=props
+
   return (
     <fieldset>
         <legend>Button</legend>
-        <button>Tab 1</button>
-        <button>Tab 2</button>
-        <button>Tab 3</button>
+        {buttons.map((button,idx)=> <button key={idx} >{button.name}</button>)}
     </fieldset>
   )
-}
+}  
 
 export default Button
