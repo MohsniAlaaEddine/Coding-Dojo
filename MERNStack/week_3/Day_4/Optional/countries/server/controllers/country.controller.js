@@ -22,31 +22,34 @@ module.exports = {
 
     },
     findOneCountryById: (req, res) => {
-        Country.findById({_id:req.params.id})
-        .then(oneCountry=>{
-            if(!oneCountry){
-                res.status(404).json({error:'country not found'})
-            }else{
-            res.status(200).json({oneCountry,message:'country found with success'})
-            }
-        })
-        .catch(error=>{
-            res.status(500).json({error})
-            console.log(error)
-        })
+        Country.findById({ _id: req.params.id })
+            .then(oneCountry => {
+                if (!oneCountry) {
+                    res.status(404).json({ error: 'country not found' })
+                } else {
+                    res.status(200).json({ oneCountry, message: 'country found with success' })
+                }
+            })
+            .catch(error => {
+                res.status(500).json({ error })
+                console.log(error)
+            })
     },
-    Update:(req,res)=>{
-        Country.findByIdAndUpdate({_id:req.params.id},req.body,{new:true,runValidators:true})
-        .then(countryUpdated =>{
-            res.status(200).json({countryUpdated,message:'country updated with success'}) 
-        })
-        .catch(error => console.log(error))
+    Update: (req, res) => {
+        Country.findByIdAndUpdate({ _id: req.params.id }, req.body, { new: true, runValidators: true })
+            .then(countryUpdated => {
+                res.status(200).json({ countryUpdated, message: 'country updated with success' })
+            })
+            .catch(error => {
+                console.log(error);
+                res.status(500).json(error.errors)
+            })
     },
-    deleteCountry:(req,res)=>{
-        Country.findByIdAndDelete({_id:req.params.id})
-        .then(countryDeleted=>{
-            res.status(200).json({countryDeleted,message:'country deleted with success'})
-        })
-        .catch(error => console.log(error))
+    deleteCountry: (req, res) => {
+        Country.findByIdAndDelete({ _id: req.params.id })
+            .then(countryDeleted => {
+                res.status(200).json({ countryDeleted, message: 'country deleted with success' })
+            })
+            .catch(error => console.log(error))
     }
 }
