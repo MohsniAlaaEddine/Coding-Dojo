@@ -23,7 +23,7 @@ module.exports = {
 
     },
 
-    findOneNote :(req, res) => {
+    findOneNote: (req, res) => {
         Note.findById({ _id: req.params.id })
             .then(oneNote => {
                 if (!oneNote) {
@@ -40,15 +40,11 @@ module.exports = {
     update: (req, res) => {
         Note.findByIdAndUpdate({ _id: req.params.id }, req.body, { new: true, runValidators: true })
             .then(noteUpdated => {
-                if (!noteUpdated) {
-                    res.status(404).json({ error: 'Note not found' })
-                } else {
-                    res.status(200).json({ noteUpdated, message: 'Note updated with success' })
-                }
+                res.status(200).json({ noteUpdated, message: 'Note updated with success' })
             })
             .catch(error => {
                 console.log(error);
-                res.status(500).json({ error })
+                res.status(500).json(error.errors)
             })
     },
     deleteOneNote: (req, res) => {
