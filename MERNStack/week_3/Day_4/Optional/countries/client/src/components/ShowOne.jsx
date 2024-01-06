@@ -23,7 +23,7 @@ const ShowOne = () => {
                     <p>Name : {country.name}</p>
                     <p>Flag : <img src={country.flag} height={50} /> </p>
                     <p>Independent : {country.independent?'Yes':'NO'}</p>
-                    <button className='btn btn-primary' onClick={()=>navigate(`/country/edit/${country._id}`)}>Edit</button>
+                    <button className='btn btn-primary' onClick={()=>navigate(`/country/${country._id}/edit`)}>Edit</button>
                 </div>
             </div>
         </div>

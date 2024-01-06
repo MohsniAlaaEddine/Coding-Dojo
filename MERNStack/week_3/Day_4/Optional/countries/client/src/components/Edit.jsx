@@ -7,7 +7,7 @@ const Edit = () => {
     const [country, setCountry] = useState({ name: '', flag: '', independent: false })
     const navigate = useNavigate()
     const { id } = useParams()
-    const [countryError, setCountryError] = useState({ name: '', flag: '' })
+    const [countryError, setErrors] = useState({name:'',flag:''})
     useEffect(() => {
         axios.get(`http://localhost:8000/api/country/${id}`)
             .then(res => {
@@ -23,29 +23,24 @@ const Edit = () => {
                 console.log(res.data)
                 navigate('/')
             })
-            .catch(error => {
-                console.log(error)
-                let tempErrors = {}
-                for (let key of Object.keys(error.response.data)) {
-                    console.log(key, '------------', error.response.data[key]);
-                    tempErrors[key] = error.response.data[key].message
-                }
-                setCountryError({ countryError, ...tempErrors })
-            })
+            .catch(err=>{
+                console.log(err.response.data);
+                setErrors(err.response.data)
+            }) 
 
     }
     return (
 
-        <form className='container col-6 p-3' onSubmit={(e) => editCountry(e)}>
+        <form className='container col-6 p-3 d-flex flex-column gap-3' onSubmit={(e) => editCountry(e)}>
             <div className='d-flex flex-column'>
                 <label className='form-label'>Name :</label>
                 <input className='form-control w-25' type="text" onChange={e => setCountry({ ...country, name: e.target.value })} value={country.name} />
-                <span className='h4 text-danger'>{countryError.name && (countryError.name)}</span>
+                {countryError.name && (<h4 className='text-danger'>{countryError.name.message}</h4>)}
             </div>
             <div className='d-flex flex-column'>
                 <label className='form-label'>Flag :</label>
                 <input className='form-control' type="text" onChange={e => setCountry({ ...country, flag: e.target.value })} value={country.flag} />
-                <span className='h4 text-danger'>{countryError.flag && countryError.flag}</span>
+                {countryError.flag && (<h4 className='text-danger'>{countryError.flag.message}</h4>)}
             </div>
             <div className='mb-3'>
                 <label className='form-label'>Independent ?</label>
