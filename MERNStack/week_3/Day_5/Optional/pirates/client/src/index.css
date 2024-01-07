@@ -1,0 +1,11 @@
+img{
+    height: 200px;
+}
+.card{
+    align-items: center;
+    justify-content: space-around;
+    background-color:#003049 ;
+}
+body{
+    background-color: #EAE2B7;
+}
