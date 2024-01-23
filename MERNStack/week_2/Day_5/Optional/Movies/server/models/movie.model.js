@@ -2,19 +2,19 @@ const mongoose = require('mongoose');
 const MovieSchema = new mongoose.Schema({
     title: {
         type: String,
-        required:[true,'Title is required!'],
-        minlength:[3,'{PATH} length must be at least 3 ']
-    },
-    image: {
-        type: String
+        required: [true, 'Title is required!'],
+        minlength: [3, '{PATH} length must be at least 3 ']
     },
     releaseYear: {
         type: Number,
-        min:[1800,'Movie realese year must be valid']
+        min: [1800, 'Movie realese year must be valid']
     },
-    sceen: {
+    image:{
+        type:Array
+    },
+    seen: {
         type: Boolean,
-        default:false
+        default: false
     },
     // isDeleted:{
     //     type:Boolean,
@@ -22,5 +22,5 @@ const MovieSchema = new mongoose.Schema({
     // }
 }, { timestamps: true });
 
-const Movie = mongoose.model('Movie',MovieSchema)
-module.exports=Movie
+const Movie = mongoose.model('Movie', MovieSchema)
+module.exports = Movie
