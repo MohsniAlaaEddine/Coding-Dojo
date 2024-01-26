@@ -6,10 +6,9 @@ public class BankAccount {
     private static int accounts;
     private static double totalMoney;
 
-}
 
 // CONSTRUCTOR
-public Account(double checkingBalance, double savingsBalance){
+    public BankAccount(double checkingBalance,double savingsBalance){
     this.checkingBalance=checkingBalance;
     this.savingsBalance=savingsBalance;
     accounts++;
@@ -44,7 +43,7 @@ public void withdrawSavingBalance(double money){
     System.out.printf("Here is your money");
     }else{
         System.out.printf("There are insufficient funds!");
-    }
+    };
 }
 
 //getBalance
@@ -73,9 +72,10 @@ public void totalBalance(){
         this.savingsBalance=newValue;
     }
 
-    public int getAccount(){
-        return this.accounts;
+    public static int getAccount(){
+        return BankAccount.accounts;
     }
-    public double getTotalMoney(){
-        return this.totalMoney;
+    public static double getTotalMoney(){
+        return BankAccount.totalMoney;
     }
+}

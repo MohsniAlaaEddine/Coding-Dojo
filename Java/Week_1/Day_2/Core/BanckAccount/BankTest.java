@@ -1,9 +1,9 @@
 public class BankTest {
     public static void main(String[] args){
         // Create 3 bank accounts
-            Account account1= new Account(2252.5,231.5);
-            Account account2= new Account(3552.5,330.5);
-            Account account3= new Account(1452.5,445.5);
+            BankAccount account1= new BankAccount(2252.5,231.5);
+            BankAccount account2= new BankAccount(3552.5,330.5);
+            BankAccount account3= new BankAccount(1452.5,445.5);
 
         // Deposit Test
         // - deposit some money into each bank account's checking or savings account and display the balance each time
@@ -26,8 +26,8 @@ public class BankTest {
 
 
         // Static Test (print the number of bank accounts and the totalMoney)
-        System.out.printf("num of bank account is "+Account.getAccount());
-        System.out.printf("The total money is "+Account.getTotalMoney());
+        System.out.printf("num of bank account is "+BankAccount.getAccount());
+        System.out.printf("The total money is "+BankAccount.getTotalMoney());
 
     }
 }
